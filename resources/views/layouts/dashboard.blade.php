@@ -9,9 +9,12 @@
         <meta name="author" content="" />
         <title>{{ config('app.name') }} - @yield('title')</title>
         <link href="{{ asset('templete/css/styles.css')}}" rel="stylesheet" />
+        <link href="{{ asset('templete/css/user.min.css')}}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="{{asset('templete/js/user.js')}}" ></script>
     </head>
 
         @yield('content')
+        @include('layouts.partials.navbar')
 
     </html>
