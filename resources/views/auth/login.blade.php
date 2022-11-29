@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Login
+@endsection
+
 @section('content')
 {{-- <div class="bg-holder overlay overlay-2" style="background-image:url( ../templete/assets/img/bglogin1.png ); width:100%;" >
 

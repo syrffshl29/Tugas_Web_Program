@@ -18,13 +18,13 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav " style="margin-left: 17em">
                     <li class="nav-item" >
-                        <a class="nav-link" href="">services</a>
+                        <a class="nav-link" href="{{route('service')}}">services</a>
                     </li>
                     <li class="nav-item" >
                         <a class="nav-link" href="">Contact</a>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="">About</a>
+                        <a class="nav-link" href="{{ route('about') }}">About</a>
                     </li>
                     <li class="nav-item" >
                         <a class="nav-link" href="">Help</a>

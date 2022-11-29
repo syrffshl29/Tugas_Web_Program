@@ -11,9 +11,7 @@
             class="text-start pt-3"
             style="font-size: 14px; font-family: Poppins, sans-serif"
           >
-          <b>KONSEL</b> hadir untuk mempermudah menemukan fashion kita ketika sedang menuju ke perkuliahan maupun
-          ke lingkup SMA atau SMK. disini kita akan membantu menemukan bakat kalian agar tidak lagi terjadi salah jurusan.
-          aplikasi ini masih tahap pengembangan. kami harap adanya aplikasi ini bisa membuat anak menjadi sesuai dengan jurusan dan semangat belajar 
+          <b>KONSEL</b> adalah platform untuk mempersiapkan generasi terbaik indonesia dalam mengasah kemampuaan sesuai dengan bakat melalui psikolog terbaik.  
           </p>
         </div>
         <div
