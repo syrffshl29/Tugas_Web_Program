@@ -28,21 +28,67 @@
         </nav>            
         </section> --}}
         
-        <section>
+        <section style="font-family: font-family :Poppins;">
           <div class="bg-image" >
            <!-- <img src="../templete/assets/img/landing.png" alt="">-->
            <div class="container">
-            <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
-              <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
-                  <div class="overflow-hidden">
-                      <h1 class="fs-4 fs-md-4 lh-1 text-white" data-zanim-xs='{"delay":0}'> <b> Sehatkan Mental Dahulu, Aktifitas Maksimal Kemudian.</b> </h1> 
-                      <p class="text-white">Periksa sekarang kesahatan mental anda dengan psikolog profesional kami, layanan fasilitas yang lengkap dan modern.</p>
-                      <p class="d-block d-lg-inline-block ms-auto my-3 my-lg-0">
-                        <a class="btn btn-danger btn-hover rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/quiz" target="_blank">Get Started</a>
-                    </p>
-                  </div>
-                  </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-2 col-lg-8">
+                      <div style="margin-top: 15em">
+                        <h1 class="fs-4 fs-md-4 lh-1 text-black" > <b style=" font-size: 48px"> Kerjakan tes sekarang dan dapatkan rekomendasi dari <span class="text-danger">Konsel</span> tentang kemampuanmu.</b> </h1>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-2 col-lg-8">
+                      <div  style="margin-top: 15em">
+                        <h1 class="fs-4 fs-md-4 lh-1 text-black" > <b style=" font-size: 48px"> Dengan bantuan psikolog, menyiapkan pemuda pemudi indonesia dalam menentukan masa depan.</b> </h1>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-2 col-lg-8">
+                      <div  style="margin-top: 15em">
+                        <h1 class="fs-4 fs-md-4 lh-1 text-black" > <b style=" font-size: 48px"> menjadi cerdas dan berkarakter adalah tujuan utama sebuah pendidikan.</b> </h1>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
               </div>
+              <div class="overflow-hidden" >
+                <p class="d-block d-lg-inline-block ms-auto my-3 my-lg-0 py-3">
+                  <a class="btn btn-danger btn-hover rounded-pill btn-lg border-5 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/quiz" target="_blank">Mulai</a>
+              </p>
+              </div>
+
+               
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="margin-top: 6em; margin-left:3em">
+                <span class="carousel-control-next-icon next-icon" aria-hidden="true"></span>
+                <span class="">Next</span>
+              </button> 
+              
+            </div>
+
+            {{-- <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+              <div class="col-sm-2 col-lg-8 px-5 px-sm-3">
+                  <div class="overflow-hidden" >
+                      {{-- <h1 class="fs-4 fs-md-4 lh-1 text-black" > <b style=" font-size: 48px"> Kerjakan tes sekarang dan dapatkan rekomendasi dari <span class="text-danger">Konsel</span> tentang kemampuanmu.</b> </h1>  --}}
+                      {{-- <p class="text-white">Periksa sekarang kesahatan mental anda dengan psikolog profesional kami, layanan fasilitas yang lengkap dan modern.</p> --}}
+                      {{-- <p class="d-block d-lg-inline-block ms-auto my-3 my-lg-0 py-3"> --}}
+                        {{-- <a class="btn btn-danger btn-hover rounded-pill btn-lg border-5 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/quiz" target="_blank">Mulai</a> --}}
+                    {{-- </p> --}}
+                  {{-- </div> --}}
+                  {{-- </div> --}}
+              {{-- </div> --}} 
+              
             </div>
            </div>
           </div>
@@ -59,7 +105,7 @@
                     <div class="container" >
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="row">
+                        <div class="row" style="font-family: Poppins">
                             <div class="col-6">
                                 <div style="margin-left:7em" >
                                     <img src="{{ asset('templete/assets/img/client1.png') }}" alt="">
@@ -90,7 +136,7 @@
                             </div>
                             <div class="col-6 align-self-center">
                                 <h1><b>Maria Sharapova</b></h1>
-                                <p class="pt-2">Writing case studies was a daunting task for us. We didn’t know where to begin or what questions to ask, and clients never seemed to follow through when we asked. Elixir team did everything – with almost no time or
+                                <p class="pt-2">Writing case studies was a daunting task for us. We didn't know where to begin or what questions to ask, and clients never seemed to follow through when we asked. Elixir team did everything – with almost no time or
                                     effort for me!.</p>
                                     <h4>Managing Director, Themewagon Inc.</h4>
                             </div> 

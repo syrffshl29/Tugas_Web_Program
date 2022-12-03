@@ -7,3 +7,12 @@
 //         } 
 //     })
 // })
+// (function($){
+// 	$(window).scroll(function(event) {
+// 		if( $(this).scrollTop() == 0 ){
+// 			$(".navbar").css('background-color', 'transparent');
+// 		} else {
+// 			$("navbar").css('background-color', 'white');
+// 		}
+// 	});
+// })(jQuery);

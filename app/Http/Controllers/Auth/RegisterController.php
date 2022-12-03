@@ -58,8 +58,8 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             
         ]);
-
         $data = $request->all();
+        
         $check = $this->create($data);
 
         return redirect("/login")->withSuccess('You have signed-in');
@@ -70,6 +70,8 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'tanggal' => ['required', 'date', 'unique:users'],
+            'kota' => ['required', 'string', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             
         ]);
@@ -89,6 +91,9 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'role' => 2,
+            'tanggal_lahir' => $data['tanggal'],
+            'kota_lahir' => $data['kota'],
+
         ]);
     }
 }

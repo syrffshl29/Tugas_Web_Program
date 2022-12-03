@@ -13,6 +13,7 @@
           >
           <b>KONSEL</b> adalah platform untuk mempersiapkan generasi terbaik indonesia dalam mengasah kemampuaan sesuai dengan bakat melalui psikolog terbaik.  
           </p>
+          
         </div>
         <div
           class="col-sm-4 col-md-5 col-lg-4 text-center text-lg-start d-flex flex-column item mt-3 mb-4 pt-md-0"
@@ -53,6 +54,15 @@
                 Jl. Raya Tajem, Denokan, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta<br />
               </p>
             </div>
+            
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <a href="{{route ('privacy')}}"><h5>Privacy policy</h5></a>
+            </div>
+            <div class="col-md-6">
+              <a href=""><h5>FAQs</h5></a>
+            </div>
           </div>
         </div>
       </div>
@@ -80,3 +90,4 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
