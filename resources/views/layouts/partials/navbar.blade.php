@@ -23,14 +23,12 @@
                 <ul class="navbar-nav ms-auto">
                     <!-- Authentication Links -->
                             <li class="nav-item">
-                                {{-- <a class="btn btn-outline-danger rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/login" target="_blank">Login</a> --}}
                                 <a class="btn btn-outline-danger rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3 nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                {{-- <a class="btn btn-danger btn-hover rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/quiz" target="_blank">Get Started</a> --}}
                                 <a class="nav-link btn btn-danger btn-hover btn rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                 </ul>

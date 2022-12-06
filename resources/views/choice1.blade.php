@@ -30,7 +30,7 @@
                                         <span class="fa fa-star" style="color:#FDE400"></span>
                                         <span class="fa fa-star"></span> 4
                                     </h6>
-                                    <a class="btn-outline-danger btn rounded-pill" href="profile_detail1.html">Konsul</a>
+                                    <a class="btn-outline-danger btn rounded-pill" href="">Konsul</a>
                                 </div>
                             </div>
                         </div>

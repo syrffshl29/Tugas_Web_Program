@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="row mb-md-2 mt-md-4">
                                   <div class="col-2 col-md-2">
-                                    <iconify-icon icon="material-symbols:safety-check-outline-rounded" style="font-size: 25px"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:safety-check-outline-rounded"  style="font-size: 25px"></iconify-icon>
                                   </div>
                                   <div class="col text-start d-md-flex">
                                     <p style="height: 14px; font-size: 16px; font-family: Poppins">
@@ -48,7 +48,7 @@
                           </div>
                         </div>
                         <div class="mt-md-5">
-                          <a href="#" class="card-link btn btn-danger rounded-pill justify-content-center d-flex">Berikutnya</a>
+                          <a href="{{route ('soal2')}}" class="card-link btn btn-danger rounded-pill" style="margin-left:170px">Berikutnya</a>
                         </div>
                   
                   </div>

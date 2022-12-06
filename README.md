@@ -10,8 +10,8 @@
 ## Setelah melakukan clone
 - ubah nama .env.example menjadi .env yang pada repository
 - install composer pada terminal (composer install)
-- install npm pada terminal (npm install), note: bagi yang belum ada npm install node.js di windows
+- install npm pada terminal (npm install), note: bagi yang belum ada npm, install node.js di windows
 - masukan file bekonsel.sql kedalam php myadmin
 - ubah file UI pada vendor->laravel->UI dengan file UI.zip yang ada pada repository
-- run npm run dev pada terminal 
-- run php artisan serve
+- run, npm run dev pada terminal 
+- run, php artisan serve

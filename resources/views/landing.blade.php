@@ -30,7 +30,6 @@
         
         <section style="font-family: font-family :Poppins;">
           <div class="bg-image" >
-           <!-- <img src="../templete/assets/img/landing.png" alt="">-->
            <div class="container">
 
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
