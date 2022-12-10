@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('pertanyaan', function (Blueprint $table) {
             $table->id();
-            $table->integer('test_id');
-            $table->integer('tipe_soal_id');
+            // $table->integer('test_id');
+            // $table->integer('tipe_soal_id');
             $table->text('pertanyaan');
             $table->float('skor');
-            $table->timestamps();   
+            $table->timestamps();
             $table->foreignId('test_id')->constrained('test');
             $table->integer('tipe_soal_id')->constrained('test');
         });

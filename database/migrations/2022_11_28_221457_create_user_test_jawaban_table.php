@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('user_test_jawaban', function (Blueprint $table) {
             $table->id();
            // $table->timestamps();
-            $table->integer('user_test_id');
-            $table->integer('pertanyaan_id');
+            // $table->integer('user_test_id');
+            // $table->integer('pertanyaan_id');
             $table->string('jawaban');
             $table->float('skor');
 
-            $table->foreignId('user_test_id')->constrained('users_test'); 
-            $table->foreignId('pertanyaan_id')->constrained('pertanyaan');                       
+            $table->foreignId('user_test_id')->constrained('user_test');
+            $table->foreignId('pertanyaan_id')->constrained('pertanyaan');
         });
     }
 

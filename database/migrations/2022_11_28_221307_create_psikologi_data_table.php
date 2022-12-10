@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('psikologi_data', function (Blueprint $table) {
             $table->id();
             // $table->timestamps();
-            $table->integer('user_id');
+            // $table->integer('user_id');
             $table->string('nama_psikolog');
             $table->integer('nomor_sertifikasi_psikolog');
             $table->text('bio_psikolog');

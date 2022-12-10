@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Choice1Controller;
@@ -13,6 +14,7 @@ use App\Http\Controllers\ProfilpsikologController;
 use App\Http\Controllers\Soal6Controller;
 use App\Http\Controllers\Soal7Controller;
 use App\Http\Controllers\Soal8Controller;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,30 @@ Route::get('/about', function() {
     return view ('about');
 })->name('about');
 
+Route::get('/dashboard', function () {
+    return view('dashboard.main');
+});
+
+Route::get('/user', function () {
+    return view('dashboard.user');
+});
+
+Route::get('/soal', function () {
+    return view('dashboard.soal');
+});
+
+Route::get('/psikolog', function () {
+    return view('dashboard.psikolog');
+});
+
+Route::get('/addsoal', function () {
+    return view('dashboard.addsoal');
+});
+
+Route::get('/tes', function () {
+    return view('dashboard.tes');
+});
+
 
 Auth::routes();
 
@@ -49,3 +75,8 @@ Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name(
 Route::get('/soal6', [Soal6Controller::class, 'index'])->name('soal6');
 Route::get('/soal7', [Soal7Controller::class, 'index'])->name('soal7');
 Route::get('/soal8', [Soal8Controller::class, 'index'])->name('soal8');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');

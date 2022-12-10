@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('master_kota', function (Blueprint $table) {
             $table->id();
-            $table->integer('daerah_id');
+            // $table->integer('daerah_id');
             $table->string('name');
             $table->foreignId('daerah_id')->constrained('master_daerah');
             $table->timestamps();

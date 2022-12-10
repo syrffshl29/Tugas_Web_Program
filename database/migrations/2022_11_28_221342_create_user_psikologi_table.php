@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('user_psikologi', function (Blueprint $table) {
             $table->id();
-    
-            $table->integer('user_id');
-            $table->integer('psikolog_id');
+
+            // $table->integer('user_id');
+            // $table->integer('psikolog_id');
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('psikolog_id')->constrained('psikolog_data');
+            $table->foreignId('psikolog_id')->constrained('psikologi_data');
             $table->text('meeting_link');
             $table->timestamps();
         });
