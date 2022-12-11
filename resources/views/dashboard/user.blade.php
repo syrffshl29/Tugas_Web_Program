@@ -86,26 +86,26 @@
           </button>
         </div>
         <div class="modal-body">
-            <form>
+            <form method="POST" action="{{ route('register') }}">
                 <div class="form-group">
                     <label for="exampleInputName">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputName">
+                    <input type="text" class="form-control" id="exampleInputName" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Alamat Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ old('email') }}">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" value="{{ old('password') }}">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPlace">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="exampleInputPlace">
+                    <input type="text" class="form-control" id="exampleInputPlace" value="{{ old('kota') }}">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputTanggal">Tanggal Lahir</label>
-                    <input type="date" class="form-control" id="exampleInputTanggal">
+                    <input type="date" class="form-control" id="exampleInputTanggal" value="{{ old('tanggal') }}">
                   </div>
               </form>
         </div>

@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Choice1Controller;
-use App\Http\Controllers\PertanyaanController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\Soal1Controller;
 use App\Http\Controllers\Soal2Controller;
@@ -61,7 +60,7 @@ Route::get('/tes', function () {
 });
 
 
-//Auth::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/service', [ServiceController::class, 'index'])->name('service');
@@ -77,10 +76,7 @@ Route::get('/soal6', [Soal6Controller::class, 'index'])->name('soal6');
 Route::get('/soal7', [Soal7Controller::class, 'index'])->name('soal7');
 Route::get('/soal8', [Soal8Controller::class, 'index'])->name('soal8');
 
-Route::get('pertanyaan',[PertanyaanController::class,'index']);
-
-
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
