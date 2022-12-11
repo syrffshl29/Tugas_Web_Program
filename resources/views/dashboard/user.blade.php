@@ -39,32 +39,16 @@
                           </tr>
                         </thead>
                         <tbody>
+                          @foreach ($user as $item)
                           <tr>
-                            <td>Johanes Ronaldo</td>
-                            <td>10 Agustus 2022</td>
-                            <td>johanesronaldo@gmail.com</td>
+                            <td>{{ $item->name }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->email }}</td>
                             <td>
                                 <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#ModalEdit">Edit</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
                             </td>
-                          </tr>
-                          <tr>
-                            <td>Harry Maguire</td>
-                            <td>09 Agustus 2022</td>
-                            <td>maguire@gmail.com</td>
-                            <td>
-                                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#ModalEdit">Edit</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Mr. Squarepants</td>
-                            <td>08 Agustus 2022</td>
-                            <td>spongebob@gmail.com</td>
-                            <td>
-                                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#ModalEdit">Edit</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
-                            </td>
+                          @endforeach
                           </tr>
                         </tbody>
                       </table>
