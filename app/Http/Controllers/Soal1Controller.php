@@ -38,4 +38,12 @@ class Soal1Controller extends Controller
     {
         return view ('soal8');
     }
+    public function soal9()
+    {
+        return view ('soal9');
+    }
+    public function soal10()
+    {
+        return view ('soal10');
+    }
 }

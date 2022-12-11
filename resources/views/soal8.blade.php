@@ -10,7 +10,7 @@
               </div>
         </div>
         <div class="text-center mt-5" style="font-size: 24px">
-            <p>Soal D</p>
+            <p>Soal F</p>
             <p>Silakan pilih 3 dari daftar berikut</p>
         </div>
         <div class="" style="width: 30rem; font-size: 24px; margin-left:17em ">
@@ -59,7 +59,7 @@
             <label class="form-check-label" for="defaultCheck">Pedagang Keliling</label>
           </div>
           <div class="mt-md-4">
-            <a href=" " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
+            <a href=" {{ route ('soal9') }} " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
           </div> 
            </div>
              
