@@ -8,10 +8,11 @@
 </p>
 
 ## Setelah melakukan clone
-- ubah nama .env.example menjadi .env yang pada repository
+- ubah nama .env.example menjadi .env yang pada repository (kalau semisal .env gaada dilakan extract terlebih dahulu)
 - install composer pada terminal (composer install)
 - install npm pada terminal (npm install), note: bagi yang belum ada npm, install node.js di windows
-- masukan file bekonsel.sql kedalam php myadmin
-- ubah file UI pada vendor->laravel->UI dengan file UI.zip yang ada pada repository
+- update composer (composer update)
+- Buat database baru pada php myadmin dengan nama bekonsel
+- ketik pada terminal php artisan migrate:fresh --seed
 - run, npm run dev pada terminal 
 - run, php artisan serve
