@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('tipe_sekolah', function (Blueprint $table) {
             $table->id();
-            $table->integer('nama', 11);
+            $table->unsignedInteger('nama')->length(11);
         });
     }
 

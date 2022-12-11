@@ -16,14 +16,14 @@ return new class extends Migration
         Schema::create('user_test', function (Blueprint $table) {
             $table->id()->unique();
            // $table->timestamps();
-            $table->integer('test_id');
-            $table->integer('user_id');
+            // $table->integer('test_id');
+            // $table->integer('user_id');
             $table->foreignId('test_id')->constrained('test');
             $table->foreignId('user_id')->constrained('users');
             $table->dateTime('mulai');
             $table->dateTime('selesai');
         });
-        
+
     }
 
     /**

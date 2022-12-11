@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->text('name', 200);
             $table->string('deskripsi', 50);
-            $table->integer('durasi_detik', 11);
+            $table->unsignedInteger('durasi_detik')->length(11);
 
         });
     }

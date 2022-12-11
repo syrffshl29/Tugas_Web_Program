@@ -13,17 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::disableForeignKeyConstraints();
         Schema::create('meta_user', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->json('meta')->nullble();
+            $table->json('meta')->nullable();
             $table->foreignId('user_id')->constrained('users');
         });
-
-        if (Schema::hasTable('users')) {
-            Schema::enableForeignKeyConstraints();
-        }
     }
 
     /**
