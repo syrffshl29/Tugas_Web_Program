@@ -39,10 +39,6 @@ Route::get('/dashboard', function () {
     return view('dashboard.main');
 });
 
-Route::get('/user', function () {
-    return view('dashboard.user');
-});
-
 Route::get('/soal', function () {
     return view('dashboard.soal');
 });
@@ -80,3 +76,4 @@ Route::get('/soal8', [Soal8Controller::class, 'index'])->name('soal8');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
