@@ -6,14 +6,14 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Choice1Controller;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\Soal1Controller;
-use App\Http\Controllers\Soal2Controller;
-use App\Http\Controllers\Soal3Controller;
-use App\Http\Controllers\Soal4Controller;
-use App\Http\Controllers\Soal5Controller;
+// use App\Http\Controllers\Soal2Controller;
+// use App\Http\Controllers\Soal3Controller;
+// use App\Http\Controllers\Soal4Controller;
+// use App\Http\Controllers\Soal5Controller;
 use App\Http\Controllers\ProfilpsikologController;
-use App\Http\Controllers\Soal6Controller;
-use App\Http\Controllers\Soal7Controller;
-use App\Http\Controllers\Soal8Controller;
+// use App\Http\Controllers\Soal6Controller;
+// use App\Http\Controllers\Soal7Controller;
+// use App\Http\Controllers\Soal8Controller;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -66,15 +66,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/service', [ServiceController::class, 'index'])->name('service');
 Route::get('/choice1', [Choice1Controller::class, 'index'])->name('choice1');
 Route::get('/privacy', [PrivacyController::class, 'index'])->name('privacy');
-Route::get('/soal1', [Soal1Controller::class, 'index'])->name('soal1');
-Route::get('/soal2', [Soal2Controller::class, 'index'])->name('soal2');
-Route::get('/soal3', [Soal3Controller::class, 'index'])->name('soal3');
-Route::get('/soal4', [Soal4Controller::class, 'index'])->name('soal4');
-Route::get('/soal5', [Soal5Controller::class, 'index'])->name('soal5');
+Route::get('/soal1', [Soal1Controller::class, 'soal1'])->name('soal1');
+Route::get('/soal2', [Soal1Controller::class, 'soal2'])->name('soal2');
+Route::get('/soal3', [Soal1Controller::class, 'soal3'])->name('soal3');
+Route::get('/soal4', [Soal1Controller::class, 'soal4'])->name('soal4');
+Route::get('/soal5', [Soal1Controller::class, 'soal5'])->name('soal5');
+Route::get('/soal6', [Soal1Controller::class, 'soal6'])->name('soal6');
+Route::get('/soal7', [Soal1Controller::class, 'soal7'])->name('soal7');
+Route::get('/soal8', [Soal1Controller::class, 'soal8'])->name('soal8');
 Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name('profilpsikolog');
-Route::get('/soal6', [Soal6Controller::class, 'index'])->name('soal6');
-Route::get('/soal7', [Soal7Controller::class, 'index'])->name('soal7');
-Route::get('/soal8', [Soal8Controller::class, 'index'])->name('soal8');
 
 // Auth::routes();
 
