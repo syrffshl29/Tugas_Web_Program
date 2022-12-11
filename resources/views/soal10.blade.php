@@ -59,7 +59,7 @@
             <label class="form-check-label" for="defaultCheck">Penulis Sandawara Radio </label>
           </div>
           <div class="mt-md-4">
-            <a href=" {{route('saol11')}} " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
+            <a href=" {{route('soal11')}} " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
           </div> 
            </div>
              

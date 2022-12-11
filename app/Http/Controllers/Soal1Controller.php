@@ -46,4 +46,8 @@ class Soal1Controller extends Controller
     {
         return view ('soal10');
     }
+    public function soal11()
+    {
+        return view ('soal11');
+    }
 }

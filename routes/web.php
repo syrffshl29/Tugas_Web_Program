@@ -72,6 +72,7 @@ Route::get('/soal7', [Soal1Controller::class, 'soal7'])->name('soal7');
 Route::get('/soal8', [Soal1Controller::class, 'soal8'])->name('soal8');
 Route::get('/soal9', [Soal1Controller::class, 'soal9'])->name('soal9');
 Route::get('/soal10', [Soal1Controller::class, 'soal10'])->name('soal10');
+Route::get('/soal11', [Soal1Controller::class, 'soal11'])->name('soal11');
 Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name('profilpsikolog');
 
 // Auth::routes();
