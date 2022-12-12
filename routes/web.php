@@ -15,6 +15,8 @@ use App\Http\Controllers\ProfilpsikologController;
 // use App\Http\Controllers\Soal7Controller;
 // use App\Http\Controllers\Soal8Controller;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\AddUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,3 +90,6 @@ Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name(
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
+Route::post('/adduser', [App\Http\Controllers\UserController::class, 'store'])->name('adduser');
+Route::delete('/deleteuser/{id}', [App\Http\Controllers\UserController::class, 'hapusAkun'])->name('hapusAkun');
+Route::put('/putuser/{id}', [App\Http\Controllers\UserController::class, 'editAkun'])->name('editAkun');
