@@ -50,4 +50,36 @@ class Soal1Controller extends Controller
     {
         return view ('soal11');
     }
+    public function soalgambar1()
+    {
+        return view ('soalgambar1');
+    }
+    public function soalgambar2()
+    {
+        return view ('soalgambar2');
+    }
+    public function soalgambar3()
+    {
+        return view ('soalgambar3');
+    }
+    public function soalgambar4()
+    {
+        return view ('soalgambar4');
+    }
+    public function soalgambar5()
+    {
+        return view ('soalgambar5');
+    }
+    public function soalgambar6()
+    {
+        return view ('soalgambar6');
+    }
+    public function soalgambar7()
+    {
+        return view ('soalgambar7');
+    }
+    public function soalgambar8()
+    {
+        return view ('soalgambar8');
+    }
 }

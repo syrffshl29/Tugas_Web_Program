@@ -59,7 +59,7 @@
             <label class="form-check-label" for="defaultCheck">Pramugara Toko Musik </label>
           </div>
           <div class="mt-md-4">
-            <a href="  " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
+            <a href=" {{route ('soalgambar1')}} " class="card-link btn btn-danger rounded-pill" style="margin-left: 7em">Berikutnya</a>
           </div> 
            </div>
              
