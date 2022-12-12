@@ -46,7 +46,12 @@
                             <td>{{ $item->email }}</td>
                             <td>
                                 <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#ModalEdit">Edit</a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
+                                <form action="{{ route('hapusAkun', $item->id) }}" method="POST">
+                                  @csrf
+                                  @method('delete')
+                                  <input type="text" value="{{ $item->id }}" name="id" hidden>
+                                  <button class="btn btn-danger" type="submit">Hapus</button>
+                                </form>
                             </td>
                           @endforeach
                           </tr>
@@ -70,32 +75,33 @@
           </button>
         </div>
         <div class="modal-body">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('adduser') }}">
+              @csrf
                 <div class="form-group">
                     <label for="exampleInputName">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputName" value="{{ old('name') }}">
+                    <input type="text" class="form-control" id="exampleInputName" value="{{ old('name') }}" name="name">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Alamat Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ old('email') }}">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ old('email') }}" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" value="{{ old('password') }}">
+                  <input type="password" class="form-control" id="exampleInputPassword1" value="{{ old('password') }}" name="password">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPlace">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="exampleInputPlace" value="{{ old('kota') }}">
+                    <input type="text" class="form-control" id="exampleInputPlace" value="{{ old('kota') }}" name="kota_lahir">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputTanggal">Tanggal Lahir</label>
-                    <input type="date" class="form-control" id="exampleInputTanggal" value="{{ old('tanggal') }}">
+                    <input type="date" class="form-control" id="exampleInputTanggal" value="{{ old('tanggal') }}" name="tanggal_lahir">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                   </div>
               </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="submit" class="btn btn-primary">Simpan</button>
         </div>
       </div>
     </div>
