@@ -92,3 +92,4 @@ Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'inde
 Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
 Route::post('/adduser', [App\Http\Controllers\UserController::class, 'store'])->name('adduser');
 Route::delete('/deleteuser/{id}', [App\Http\Controllers\UserController::class, 'hapusAkun'])->name('hapusAkun');
+Route::put('/putuser/{id}', [App\Http\Controllers\UserController::class, 'editAkun'])->name('editAkun');

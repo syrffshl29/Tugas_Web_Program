@@ -50,7 +50,7 @@
                                   @csrf
                                   @method('delete')
                                   <input type="text" value="{{ $item->id }}" name="id" hidden>
-                                  <button class="btn btn-danger" type="submit">Hapus</button>
+                                  <button class="btn btn-danger mt-1" type="submit">Hapus</button>
                                 </form>
                             </td>
                           @endforeach
@@ -116,32 +116,34 @@
           </button>
         </div>
         <div class="modal-body">
-            <form>
+            <form method="POST" action="{{ route('editAkun', $item->id) }}">
+              @csrf
+              @method('put')
                 <div class="form-group">
                     <label for="exampleInputName">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputName">
+                    <input type="text" class="form-control" id="exampleInputName" name="name">
                   </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Alamat Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPlace">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="exampleInputPlace">
+                    <input type="text" class="form-control" id="exampleInputPlace" name="kota_lahir">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputTanggal">Tanggal Lahir</label>
-                    <input type="date" class="form-control" id="exampleInputTanggal">
+                    <input type="date" class="form-control" id="exampleInputTanggal" name="tanggal_lahir">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                   </div>
               </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
         </div>
       </div>
     </div>
