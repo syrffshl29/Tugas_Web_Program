@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('tipe_soal', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('soal_RMIB');
-            $table->string('soal_PICTURE');
-            $table->string('soal_hollandtest');
+            $table->string('nama_tipe');
+            $table->string('deskripsi');
         });
     }
 

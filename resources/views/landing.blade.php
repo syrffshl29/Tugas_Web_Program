@@ -64,7 +64,7 @@
               </div>
               <div class="overflow-hidden" >
                 <p class="d-block d-lg-inline-block ms-auto my-3 my-lg-0 py-3">
-                  <a class="btn btn-danger btn-hover rounded-pill btn-lg border-5 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="/quiz" target="_blank">Mulai</a>
+                  <a class="btn btn-danger btn-hover rounded-pill btn-lg border-5 d-block d-lg-inline-block ms-auto my-3 my-lg-0 mx-3" href="{{ route ('login') }}" target="_blank">Mulai</a>
               </p>
               </div>
 
