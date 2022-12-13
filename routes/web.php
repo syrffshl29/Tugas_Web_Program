@@ -84,6 +84,8 @@ Route::get('/soalgambar6', [Soal1Controller::class, 'soalgambar6'])->name('soalg
 Route::get('/soalgambar7', [Soal1Controller::class, 'soalgambar7'])->name('soalgambar7');
 Route::get('/soalgambar8', [Soal1Controller::class, 'soalgambar8'])->name('soalgambar8');
 Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name('profilpsikolog');
+// Route::resource('/pertanyaan1', \App\Http\Controllers\PertanyaanController::class);
+Route::get('/pertanyaan1/{test_id}',  [\App\Http\Controllers\PertanyaanController::class, 'index']);
 
 // Auth::routes();
 

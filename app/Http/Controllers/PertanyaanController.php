@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 
 class PertanyaanController extends Controller
 {
-    public function index(){
-        $pertanyaan = Pertanyaan::all();
-        return view('pertanyaan',compact('pertanyaan'));
+     /**
+     * index
+     *
+     * @return void
+     */
+    public function index($test_id){
+        $pertanyaan = Pertanyaan::latest();
+        $pertanyaan = Pertanyaan::where('test_id',$test_id)->get();
+        return view('pertanyaan1', compact('pertanyaan'));
     }
 }
