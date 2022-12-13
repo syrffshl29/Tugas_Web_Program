@@ -13,12 +13,19 @@
             <p>Soal A</p>
             <p>Silakan pilih 3 dari daftar berikut</p>
         </div>
+
+        @forelse ($pertanyaan as $pertanyaan)
         <div class="" style="width: 30rem; font-size: 24px; margin-left:17em ">
             <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck">
-            <label class="form-check-label me-5" for="defaultCheck">Pekerjaan Pertanian</label>
+            <label class="form-check-label me-5" for="defaultCheck">
+              <td>
+                {{ $pertanyaan->pertanyaan}}
+            </td>
+            </label>
           </div>
-          <div class="form-check">
+          @endforelse
+          {{-- <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck">
             <label class="form-check-label me-5" for="defaultCheck">Pengemudi Kendaraan Militer</label>
           </div>
@@ -72,7 +79,7 @@ $('input[type=checkbox]').on('change', function(evt) {
        alert('Hanya boleh memilih maksimal 3 kategori !');
    }
 });
-</script>
+</script> --}}
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </section>

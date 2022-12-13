@@ -20,5 +20,10 @@ class TestSeeder extends Seeder
             'deskripsi' => ' pilih 3 saja',
             'durasi_detik' => '120',
         ]);
+        DB::table('test')->insert([
+            'name' => 'Tipe RMIB Soal B',
+            'deskripsi' => ' pilih 3 saja',
+            'durasi_detik' => '120',
+        ]);
     }
 }
