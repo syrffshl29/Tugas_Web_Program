@@ -21,7 +21,7 @@ return new class extends Migration
             $table->float('skor');
             $table->timestamps();
             $table->foreignId('test_id')->constrained('test');
-            $table->integer('tipe_soal_id')->constrained('test');
+            $table->foreignId('tipe_soal_id')->constrained('tipe_soal');
         });
     }
 

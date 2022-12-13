@@ -6,4 +6,5 @@
     @foreach ($pertanyaan as $p)
         {{ $p }}
     @endforeach
+    
 @endsection
