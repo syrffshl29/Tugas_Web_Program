@@ -36,5 +36,16 @@ class UserSeeder extends Seeder
         ]);
 
         $user->assignRole('user');
+
+        $user = User::create([
+            'name' => 'Psikolog Role',
+            'email' => 'psikolog@psikolog.com',
+            'password' => bcrypt('psikolog'),
+            'role' => 3,
+            'tanggal_lahir' => '22-12-1992',
+            'kota_lahir' => 'Nganjuk'
+        ]);
+
+        $user->assignRole('psikolog');
     }
 }
