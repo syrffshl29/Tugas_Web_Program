@@ -15,6 +15,8 @@ use App\Http\Controllers\ProfilpsikologController;
 // use App\Http\Controllers\Soal7Controller;
 // use App\Http\Controllers\Soal8Controller;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\AddUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,6 +75,14 @@ Route::get('/soal8', [Soal1Controller::class, 'soal8'])->name('soal8');
 Route::get('/soal9', [Soal1Controller::class, 'soal9'])->name('soal9');
 Route::get('/soal10', [Soal1Controller::class, 'soal10'])->name('soal10');
 Route::get('/soal11', [Soal1Controller::class, 'soal11'])->name('soal11');
+Route::get('/soalgambar1', [Soal1Controller::class, 'soalgambar1'])->name('soalgambar1');
+Route::get('/soalgambar2', [Soal1Controller::class, 'soalgambar2'])->name('soalgambar2');
+Route::get('/soalgambar3', [Soal1Controller::class, 'soalgambar3'])->name('soalgambar3');
+Route::get('/soalgambar4', [Soal1Controller::class, 'soalgambar4'])->name('soalgambar4');
+Route::get('/soalgambar5', [Soal1Controller::class, 'soalgambar5'])->name('soalgambar5');
+Route::get('/soalgambar6', [Soal1Controller::class, 'soalgambar6'])->name('soalgambar6');
+Route::get('/soalgambar7', [Soal1Controller::class, 'soalgambar7'])->name('soalgambar7');
+Route::get('/soalgambar8', [Soal1Controller::class, 'soalgambar8'])->name('soalgambar8');
 Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name('profilpsikolog');
 
 // Auth::routes();
@@ -80,3 +90,6 @@ Route::get('/profilpsikolog', [ProfilpsikologController::class, 'index'])->name(
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
+Route::post('/adduser', [App\Http\Controllers\UserController::class, 'store'])->name('adduser');
+Route::delete('/deleteuser/{id}', [App\Http\Controllers\UserController::class, 'hapusAkun'])->name('hapusAkun');
+Route::put('/putuser/{id}', [App\Http\Controllers\UserController::class, 'editAkun'])->name('editAkun');

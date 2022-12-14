@@ -22,7 +22,10 @@ return new class extends Migration
             $table->timestamps();
             $table->foreignId('test_id')->constrained('test');
             $table->foreignId('tipe_soal_id')->constrained('tipe_soal');
+<<<<<<< HEAD
             
+=======
+>>>>>>> 9be55e6870bddedfa90e7f20a970af6049b15731
         });
     }
 
