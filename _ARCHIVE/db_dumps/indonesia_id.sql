@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 15, 2022 at 04:33 AM
+-- Generation Time: Dec 15, 2022 at 04:48 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -88464,21 +88464,21 @@ INSERT INTO `provinsi` (`id`, `nama`) VALUES
 --
 ALTER TABLE `kabupaten`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `regencies_province_id_index` (`provinsi_id`);
+  ADD KEY `kabupaten_provinsi` (`provinsi_id`);
 
 --
 -- Indexes for table `kecamatan`
 --
 ALTER TABLE `kecamatan`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `districts_id_index` (`kabupaten_id`);
+  ADD KEY `kecamatan_kabupaten` (`kabupaten_id`);
 
 --
 -- Indexes for table `kelurahan`
 --
 ALTER TABLE `kelurahan`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `villages_district_id_index` (`kecamatan_id`);
+  ADD KEY `kelurahan_kecamatan` (`kecamatan_id`);
 
 --
 -- Indexes for table `provinsi`
@@ -88494,19 +88494,19 @@ ALTER TABLE `provinsi`
 -- Constraints for table `kabupaten`
 --
 ALTER TABLE `kabupaten`
-  ADD CONSTRAINT `regencies_province_id_foreign` FOREIGN KEY (`provinsi_id`) REFERENCES `provinsi` (`id`);
+  ADD CONSTRAINT `kabupaten_provinsi` FOREIGN KEY (`provinsi_id`) REFERENCES `provinsi` (`id`);
 
 --
 -- Constraints for table `kecamatan`
 --
 ALTER TABLE `kecamatan`
-  ADD CONSTRAINT `districts_regency_id_foreign` FOREIGN KEY (`kabupaten_id`) REFERENCES `kabupaten` (`id`);
+  ADD CONSTRAINT `kecamatan_kabupaten` FOREIGN KEY (`kabupaten_id`) REFERENCES `kabupaten` (`id`);
 
 --
 -- Constraints for table `kelurahan`
 --
 ALTER TABLE `kelurahan`
-  ADD CONSTRAINT `villages_district_id_foreign` FOREIGN KEY (`kecamatan_id`) REFERENCES `kecamatan` (`id`);
+  ADD CONSTRAINT `kelurahan_kecamatan` FOREIGN KEY (`kecamatan_id`) REFERENCES `kecamatan` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
